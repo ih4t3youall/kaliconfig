@@ -1,0 +1,11 @@
+ifconfig wlan0 down
+iwconfig wlan0 mode monitor
+ifconfig wlan0 up
+sleep 4
+airmon-ng check wlan0
+
+for var in $(airmon-ng check wlan0 | tail -4 | awk -F " " '{print $1}')
+do
+kill $var
+done
+echo all proceesses killed, ready to start

@@ -116,4 +116,4 @@ alias documents="cd /root/Documents"
 alias downloads="cd /root/Downloads"
 alias bashrc="vim /root/.bashrc"
 alias bashrcu=". /root/.bashrc"
-
+alias kaliconf="cd /root/kaliconfig"
